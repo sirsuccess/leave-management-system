@@ -27,18 +27,6 @@
     {
       "id": 2,
       "role": "staff"
-    },
-    {
-      "role": "client",
-      "id": 3
-    },
-    {
-      "role": "amani",
-      "id": 4
-    },
-    {
-      "role": "amani",
-      "id": 5
     }
   ],
   "leaves": [
