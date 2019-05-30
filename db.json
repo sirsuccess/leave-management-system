@@ -10,13 +10,40 @@
       "roleID": 1
     },
     {
-      "first-name": "adam",
-      "last-name": "eve",
-      "email": "adam@gmail.com",
-      "username": "adam",
-      "password": "12345",
-      "roleID": 1,
+      "first-name": "",
+      "last-name": "",
+      "email": "",
+      "username": "",
+      "password": "",
+      "roleID": "1",
       "id": 2
+    },
+    {
+      "first-name": "HHH",
+      "last-name": "NHH",
+      "email": "HHH@H.VO",
+      "username": "JJ",
+      "password": "HH",
+      "roleID": "1",
+      "id": 3
+    },
+    {
+      "first-name": "HHH",
+      "last-name": "NHH",
+      "email": "HHH@H.VO",
+      "username": "JJ",
+      "password": "HH",
+      "roleID": "1",
+      "id": 4
+    },
+    {
+      "first-name": "AMANI",
+      "last-name": "JSJSJ",
+      "email": "KANU@HDMD.COM",
+      "username": "KSKSK",
+      "password": "JDJDJD",
+      "roleID": "1",
+      "id": 5
     }
   ],
   "roles": [

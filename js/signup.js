@@ -11,8 +11,8 @@ $(document).ready(function () {
   // })
 
 
-  submit.click(function (event) {
-    // event.preventDefault();
+  submit.click(function (e) {
+    e.preventDefault();
     console.log("am seeing you")
     var fName = $("#fName").val();
     var lName = $("#lName").val();
@@ -20,19 +20,29 @@ $(document).ready(function () {
     var email = $("#email").val();
     var password = $("#password").val()
 
-    console.log("list item" + [lName, username, fName, email, password])
+  
+    console.log("list item " + [lName, username, fName, email, password])
     console.log("am inside function");
-    var url = "http://localhost:3000/users";
-    $.post(url, {
-      "first-name": fName,
-      "last-name": lName,
-      "email": email,
-      "username": username,
-      "password": password,
-      "roleID": 1
-    }, function (data) {
-      alert("success" + data.fName);
-      // $("#mypar").html(response.amount);
-    });
+
+    $.ajax({
+      url:"http://localhost:3000/users",
+      type: 'POST',
+      dataType: 'json',
+      data:{
+          "first-name": fName,
+          "last-name": lName,
+          "email": email,
+          "username": username,
+          "password": password,
+          "roleID": 1
+        },
+      error: function() {
+      alert('error')
+      },
+      success: function(data) {
+        alert('done')
+        console.log(data)
+      }
+      });
   });
 });
