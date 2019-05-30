@@ -17,24 +17,6 @@
       "password": "12345",
       "roleID": 1,
       "id": 2
-    },
-    {
-      "first-name": "amani",
-      "last-name": "kanu",
-      "email": "mani@gmail",
-      "username": "man",
-      "password": "",
-      "roleID": "1",
-      "id": 3
-    },
-    {
-      "first-name": "amani",
-      "last-name": "kanu",
-      "email": "mani@gmail",
-      "username": "man",
-      "password": "amma",
-      "roleID": "1",
-      "id": 4
     }
   ],
   "roles": [
