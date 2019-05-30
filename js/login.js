@@ -1,17 +1,29 @@
 $(document).ready(() => {
-
-    var submit = $("#submit")
+    var submit = $("#submit");
     submit.click(function () {
+        var userName = $("#username").val();
+        var pass = $("#password").val();
+
         $.ajax({
-            url: "http://localhost:3000/users",
+            url:"http://localhost:3000/users",
             type: 'GET',
-            success: function (data) {
-                alert(data);
+            dataType: 'json',
+            error: function() {
+            alert('error')
             },
-            error: function (xhr, ajaxOptions, thrownError) {
-                alert(xhr.status);
-                alert(thrownError);
+            success: function(data) {
+              alert('done')
+              data.map(user=>{
+                // console.log(user.username)
+                if(user.username===userName && pass===user.password){
+                    window.location.href = "./staff/home.html";
+                }else{
+                    console.log("not found")
+                }
+              })
             }
-        });
+            });
+
+            
     })
 })
