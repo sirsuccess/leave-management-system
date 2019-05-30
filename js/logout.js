@@ -1,10 +1,9 @@
-$(document).ready(() =>{
-    var logout = $("#logout")
+
+var logout = document.getElementById("logout")
     console.log("am good")
-    alert("is working")
     logout.click(function (e) {
         alert("is working")
+        sessionStorage.removeItem("user");
         sessionStorage.clear();
         window.location.href = "./index.html";  
     })
-})

@@ -20,7 +20,7 @@ $(document).ready(() => {
           // console.log(user.username)
           if (user.username === userName && user.password == pass) {
             console.log(pass)
-            sessionStorage.setItem("user", user);
+            sessionStorage.setItem("user", user.id);
             window.location.href = "./staff/home.html";
           } else {
             console.log("not found")

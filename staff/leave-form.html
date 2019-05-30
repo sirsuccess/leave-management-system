@@ -31,8 +31,8 @@
                 <div class="login"><a href="view-leave.html">View Leave</a></div>
             </div>
             <div class="form-inline">
-                <div class="login mr-5"><a href="login.html"><i class="fas fa-sign-in-alt"></i> View Profile</a></div>
-                <div class="login"><a href="signup.html"><i class="fas fa-user-plus"></i> LOGOUT</a></div>
+                <div class="login mr-5"><a href="profile.html"><i class="fas fa-sign-in-alt"></i> View Profile</a></div>
+                <div class="login"><a href="#"><i class="fas fa-user-plus"></i> LOGOUT</a></div>
             </div>
 
         </div>
@@ -41,10 +41,10 @@
         <div class="card w-50 mx-auto my-auto">
             <div class="card-body">
                 <h2 class="card-title card-header bg-primary">Create Leave</h2>
-                <form method="POST" id="leaveReg">
+                <form  id="leaveReg">
                     <label for="type">
-                        Type of leave: <select class="custom-select form-control-md mr-3 ml-3">
-                            <option selected>select leave type</option>
+                        Type of leave: <select id="type" class="custom-select form-control-md mr-3 ml-3">
+                            <option selected >select leave type</option>
                             <option value="Maternity/Paternity">Maternity/Paternity</option>
                             <option value="Vacation days">Vacation days</option>
                             <option value="Annual leave">Annual leave</option>

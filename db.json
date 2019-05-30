@@ -19,10 +19,31 @@
       "id": 6
     },
     {
-      "id": 7
+      "first-name": "amani",
+      "last-name": "KANU",
+      "email": "kanu@gmail.com",
+      "username": "kanu",
+      "password": "12345",
+      "roleID": "1",
+      "id": 9
     },
     {
-      "id": 8
+      "first-name": "amani",
+      "last-name": "KANU",
+      "email": "kanu@gmail.com",
+      "username": "kanu",
+      "password": "12345",
+      "roleID": "1",
+      "id": 10
+    },
+    {
+      "first-name": "chisom",
+      "last-name": "nzewi",
+      "email": "chomsy@gmail.com",
+      "username": "chomsy",
+      "password": "12345",
+      "roleID": "1",
+      "id": 11
     }
   ],
   "roles": [
@@ -40,8 +61,8 @@
       "id": 1,
       "type": "annual",
       "reason": "annual compulsory leave for all staff",
-      "start-date": "29/05/2017",
-      "end-date": "29/06/2017",
+      "startDate": "29/05/2017",
+      "endDate": "29/06/2017",
       "userID": 1,
       "status": "not Approve"
     }

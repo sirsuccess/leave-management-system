@@ -40,8 +40,8 @@ $(document).ready(function () {
       alert('error')
       },
       success: function(data) {
-        alert('done')
-        console.log(data)
+        alert(fName +" you have successfuly sign up")
+        window.location.href = "./login.html";
       }
       });
   });
