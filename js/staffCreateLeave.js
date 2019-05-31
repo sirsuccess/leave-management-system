@@ -1,26 +1,19 @@
 $(document).ready(function () {
 
-    //window.location.href = "login.html";
 
     var submit = $("#submit");
 
-
-    // fName.blur(function () {
-    //   console.log(fName.val())
-    // })
-
+console.log("yeah just landed")
     var id = sessionStorage.getItem("user");
 
     submit.click(function (e) {
         e.preventDefault();
+        var id = sessionStorage.getItem("user");
         console.log("am seeing you")
         var type = $("#type").val();
         var reason = $("#reason").val();
         var startDate = $("#start-date").val();
         var endDate = $("#end-date").val();
-        
-
-
 
         console.log("list item " + [type, reason, startDate, endDate])
         console.log("am inside function");
@@ -36,12 +29,12 @@ $(document).ready(function () {
                 "endDate": endDate,
                 "userID": id,
                 "status": "Not Approve"
-          },
+            },
             error: function () {
                 alert('error')
             },
             success: function (data) {
-                alert(fName + " you have successfuly ")
+                alert(" you have successfuly sent leave for approval ")
             }
         });
     });

@@ -5,7 +5,7 @@ $(document).ready(() => {
     e.preventDefault()
     var userName = $("#username").val();
     var pass = $("#password").val();
-     //console.log(pass)
+    //console.log(pass)
 
     $.ajax({
       url: "http://localhost:3000/users",
@@ -18,14 +18,15 @@ $(document).ready(() => {
         console.log('done')
         data.map(user => {
           // console.log(user.username)
-          if (user.username === userName && user.password == pass) {
-            console.log(pass)
-            sessionStorage.setItem("user", user.id);
-            window.location.href = "./staff/home.html";
-          } else {
-            console.log("not found")
+          if (user.username === userName && user.password == pass ) {
+            if(user.roleID==1){
+
+              window.location.href = "./staff/home.html";
+            }
+            window.location.href = "./managemnt/home.html"
           }
         })
+        $("p").append("Opps..! incorrect credentials, try again")
       }
     });
 

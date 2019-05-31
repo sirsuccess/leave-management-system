@@ -7,7 +7,7 @@
       "email": "kanuamani@gmail.com",
       "username": "sirsuccess",
       "password": "12345",
-      "roleID": 1
+      "roleID": 2
     },
     {
       "first-name": "AMANI",
@@ -65,6 +65,60 @@
       "endDate": "29/06/2017",
       "userID": 1,
       "status": "not Approve"
+    },
+    {
+      "type": "select leave type",
+      "reason": "",
+      "startDate": "",
+      "endDate": "",
+      "userID": "",
+      "status": "Not Approve",
+      "id": 2
+    },
+    {
+      "type": "Maternity/Paternity",
+      "reason": "dsdd",
+      "startDate": "2019-05-02",
+      "endDate": "2019-05-31",
+      "userID": "",
+      "status": "Not Approve",
+      "id": 3
+    },
+    {
+      "type": "Vacation days",
+      "reason": "i want to enjoy myself",
+      "startDate": "2019-05-24",
+      "endDate": "2019-06-29",
+      "userID": "11",
+      "status": "Not Approve",
+      "id": 4
+    },
+    {
+      "type": "Maternity/Paternity",
+      "reason": "i just gave birth",
+      "startDate": "2019-05-23",
+      "endDate": "2019-05-30",
+      "userID": "11",
+      "status": "Not Approve",
+      "id": 5
+    },
+    {
+      "type": "Study leav",
+      "reason": "ready for study",
+      "startDate": "2019-05-08",
+      "endDate": "2019-05-01",
+      "userID": "6",
+      "status": "Not Approve",
+      "id": 6
+    },
+    {
+      "type": "Parental leave",
+      "reason": "i need to take care of my child",
+      "startDate": "2019-05-01",
+      "endDate": "2019-05-25",
+      "userID": "6",
+      "status": "Not Approve",
+      "id": 7
     }
   ]
 }
