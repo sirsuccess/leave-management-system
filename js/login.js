@@ -22,8 +22,10 @@ $(document).ready(() => {
             if (user.roleID == 1) {
 
               window.location.href = "./staff/home.html";
+            }else{
+
+              window.location.href = "./managemnt/home.html"
             }
-            window.location.href = "./managemnt/home.html"
           }
         })
         $("p").append("Opps..! incorrect credentials, try again")

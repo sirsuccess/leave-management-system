@@ -44,6 +44,15 @@
       "password": "12345",
       "roleID": "1",
       "id": 11
+    },
+    {
+      "first-name": "adam",
+      "last-name": "james",
+      "email": "james@gmail.com",
+      "username": "james",
+      "password": "12345",
+      "roleID": "1",
+      "id": 12
     }
   ],
   "roles": [

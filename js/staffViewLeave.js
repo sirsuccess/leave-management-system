@@ -9,7 +9,7 @@ $(document).ready(function () {
   }).done(function (data) {
     // console.log(data);
     $.map(data, function (post, i) {
-      
+
       var add = '<tr>';
       add += '<td>' + post.id + '</td>';
       add += '<td>' + post.type + '</td>';
@@ -18,31 +18,33 @@ $(document).ready(function () {
       add += '<td>' + post.endDate + '</td>';
       add += '<td>' + post.status + '</td>';
       add += '<td>' + `<button  class="btn  btn-warning">Edit</button>` + '</td>';
-      add += '<td>' + `<button  ten=${this.post.id} sessionStorage.setItem("id", post.id); class="btn deleteItem btn-danger">DELETE</button>` + '</td>';
+      add += '<td>' + '<button   <a href="#" id="' + post.id + '" class="btn deleteItem btn-danger">DELETE</button></a> </td>';
       add += '</tr>';
 
       $('table tbody').append(add);
     });
-    if(data.length<1){
+    if (data.length < 1) {
       $("p").append("You don't have any leave record")
     }
-    var deleteItem = $(".deleteItem");
-    
-    deleteItem.click((e, id) => {
+
+    //delet item from database
+    $(document).on("click", ".deleteItem", function (e) {
       e.preventDefault();
-      alert($("#id"))
-      // $("td").remove()
-      console.log(ten)
-      console.log("i can hear you")
-      // console.log(find)
+      var id = $(this).attr("id")
+      console.log(id);
+      $.ajax({
+        url: `http://localhost:3000/leaves`,
+        type: 'DELETE',
+        // dataType: 'json',
+        contentType: 'application/json',
+        data: id,
+        error: function () {
+          alert('oopp!.. error something when wrong')
+        },
+        success: function () {
+          alert('done')
+
+        }
+      });
     })
-  
   });
-
-
-  function numCount(x){
-    x += x
-    return x
-  }
-  
-});
