@@ -18,8 +18,8 @@ $(document).ready(() => {
         console.log('done')
         data.map(user => {
           // console.log(user.username)
-          if (user.username === userName && user.password == pass ) {
-            if(user.roleID==1){
+          if (user.username === userName && user.password == pass) {
+            if (user.roleID == 1) {
 
               window.location.href = "./staff/home.html";
             }
